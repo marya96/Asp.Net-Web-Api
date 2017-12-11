@@ -1,0 +1,39 @@
+﻿@model IEnumerable<ApiAnnouncements.Models.Announcement>
+@{
+    ViewBag.Title = "Index";
+}
+
+<br />
+@foreach (var item in Model)
+{
+    @*<ul class="list-item">
+            <li>@item.Title</li>
+            <li>@item.Content</li>
+            <li>@item.ExpireDate</li>
+            @Html.ActionLink("Detalii", "Details", "Home", new {id=@item.Id}, new {@class = "btn btn-primary "})
+            @Html.ActionLink("Edit", "Edit", "Home", new {id=@item.Id}, new {@class = "btn btn-info "})
+
+
+        </ul>*@
+
+    <div class="announcement">
+        <a href="@Url.Action("Delete", "Home", new { id = @item.Id})" class="announcement-remove">
+            <span class="glyphicon glyphicon-remove"></span>
+        </a>
+        <div class="title">
+            @item.Title
+        </div>
+        <div class="content">
+            @item.Content
+        </div>
+        <div class="availability">
+            @item.ExpireDate
+        </div>
+        <div class="buttons">
+            @Html.ActionLink("Detalii", "Details", "Home", new { id = @item.Id }, new { @class = "btn btn-primary " })
+            @Html.ActionLink("Edit", "Edit", "Home", new { id = @item.Id }, new { @class = "btn btn-info " })
+
+        </div>
+    </div>
+
+}
