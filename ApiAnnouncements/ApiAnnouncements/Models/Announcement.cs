@@ -19,8 +19,11 @@ namespace ApiAnnouncements.Models
         [Required]
         public DateTime ExpireDate { get; set; }
 
-        //[Required]
-        //public int CategoryId { get; set; }
-        //public Category Category { get; set; }
+        [Required]
+        public bool Status { get; set; }
+
+        [Required]
+        public int CategoryId { get; set; }
+        public Category Category { get; set; }
     }
 }

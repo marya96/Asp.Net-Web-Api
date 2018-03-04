@@ -18,6 +18,6 @@ namespace ApiAnnouncements.Models
         }
 
         public System.Data.Entity.DbSet<ApiAnnouncements.Models.Announcement> Announcements { get; set; }
-
+        DbSet<Category> Categories { get; set; }
     }
 }

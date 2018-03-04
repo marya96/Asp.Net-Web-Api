@@ -141,25 +141,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201711100746466_CreateTableAnnouncement.cs" />
-    <Compile Include="Migrations\201711100746466_CreateTableAnnouncement.Designer.cs">
-      <DependentUpon>201711100746466_CreateTableAnnouncement.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201711100816145_PopulateTableAnnouncement.cs" />
-    <Compile Include="Migrations\201711100816145_PopulateTableAnnouncement.Designer.cs">
-      <DependentUpon>201711100816145_PopulateTableAnnouncement.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712102104099_CreateTableCategory.cs" />
-    <Compile Include="Migrations\201712102104099_CreateTableCategory.Designer.cs">
-      <DependentUpon>201712102104099_CreateTableCategory.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712102122580_UpdateTableAnnouncement.cs" />
-    <Compile Include="Migrations\201712102122580_UpdateTableAnnouncement.Designer.cs">
-      <DependentUpon>201712102122580_UpdateTableAnnouncement.cs</DependentUpon>
+    <Compile Include="Migrations\201803041343586_CreateTableCategory.cs" />
+    <Compile Include="Migrations\201803041343586_CreateTableCategory.Designer.cs">
+      <DependentUpon>201803041343586_CreateTableCategory.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Announcement.cs" />
     <Compile Include="Models\ApiAnnouncementsDbContext.cs" />
+    <Compile Include="Models\Category.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -181,17 +170,8 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201711100746466_CreateTableAnnouncement.resx">
-      <DependentUpon>201711100746466_CreateTableAnnouncement.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201711100816145_PopulateTableAnnouncement.resx">
-      <DependentUpon>201711100816145_PopulateTableAnnouncement.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712102104099_CreateTableCategory.resx">
-      <DependentUpon>201712102104099_CreateTableCategory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712102122580_UpdateTableAnnouncement.resx">
-      <DependentUpon>201712102122580_UpdateTableAnnouncement.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201803041343586_CreateTableCategory.resx">
+      <DependentUpon>201803041343586_CreateTableCategory.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -13,7 +13,7 @@ namespace ApiAnnouncements.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201712102104099_CreateTableCategory"; }
+            get { return "201803041343586_CreateTableCategory"; }
         }
         
         string IMigrationMetadata.Source
